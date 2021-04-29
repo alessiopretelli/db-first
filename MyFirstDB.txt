@@ -1,0 +1,40 @@
+Tabella dati in base di dati:
+
+Libri - T_libri - T_books
+
+id 			numero 		incremental		NOT NULL		PRIMARY KEY UNIQUE	
+isbn 			stringa		varchar(13)		NOT NULL		UNIQUE
+titolo			stringa		varchar(50)		NOT NULL
+autore			stringa		varchar(50)		NOT NULL
+casa_editrice		stringa		varchar(50)		NOT NULL
+anno_pubblicazione	data		YEAR			NULL
+pagine			numero 		MEDIUMINT		NULL
+genere			stringa		varchar(50)		NULL
+edizione		data		DATE			NOT NULL
+trama			stringa		text			NULL
+versione		stringa		varchar(50)		NOT NULL
+prezzo			numero 		FLOAT(8,2)		NOT NULL
+poster			stringa		text			DEFAULT('default.jpg')
+lingua			stringa		varchar(50)		NOT NULL
+collana			stringa		varchar(50)		NULL
+__________________________________________________________________________________________________________
+
+Automobili
+
+id			numero		incremental		NOT NULL		PRIMARY KEY UNIQUE
+targa			stringa		varchar(7)		NOT NULL		UNIQUE
+marca			stringa		varchar(50)		NOT NULL
+modello			stringa		varchar(50)		NOT NULL
+km			numero		MEDIUMINT		NOT NULL
+immatricolata		stringa		varchar(2)		NOT NULL
+data_immatricolazione	data		DATE			NOT NULL
+potenza			numero		SMALLINT		NULL
+cilindri		numero		TINYINT			NULL
+alimentazione		stringa		varchar(50)		NOT NULL
+porte			numero		TINYINT			NOT NULL
+colore			stringa		varchar(50)		NULL
+optionals		stringa		text			NULL
+prezzo			numero		FLOAT(10, 2)		NOT NULL
+condizioni		stringa		varchar(5)		NOT NULL
+numero_proprietari	numero		TINYINT			NOT NULL
+descrizione		stringa		text			NULL
